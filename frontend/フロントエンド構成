@@ -1,0 +1,34 @@
+workflow-planner-frontend/
+├── public/
+│   └── index.html                  # メインHTMLファイル
+├── src/
+│   ├── components/
+│   │   ├── ControlPanel/
+│   │   │   ├── controlPanel.jsx    # コントロールパネル
+│   │   │   ├── dateSelector.jsx    # 日付選択
+│   │   │   ├── holidaySelector.jsx # 休日選択
+│   │   │   └── presetSelector.jsx  # プリセット選択
+│   │   ├── GanttChart/
+│   │   │   ├── ganttChart.jsx      # ガントチャート
+│   │   │   └── dependencyArrows.jsx # 依存関係矢印
+│   │   ├── TaskList/
+│   │   │   ├── taskList.jsx        # タスク一覧
+│   │   │   └── taskRow.jsx         # タスク行
+│   │   ├── TaskModal/
+│   │   │   ├── taskModal.jsx       # タスク編集モーダル
+│   │   │   └── dependencySelector.jsx # 依存関係選択
+│   │   ├── WorkflowPlanner.jsx     # メインコンポーネント
+│   │   └── Login.jsx               # ログイン画面
+│   ├── store/
+│   │   ├── authStore.js            # 認証状態管理(Zustand)
+│   │   └── workflowStore.js        # ワークフロー状態管理(Zustand)
+│   ├── utils/
+│   │   └── dateUtils.js            # 日付操作ユーティリティ
+│   ├── data/
+│   │   ├── workflowPresets.js      # プリセットデータ(現在はローカル)
+│   │   └── holidaysData.js         # 休日データ(現在はローカル)
+│   ├── App.jsx                     # アプリルート
+│   ├── main.jsx                    # エントリーポイント
+│   └── index.css                   # スタイル定義
+├── index.html                      # ベースHTML
+└── postcss.config.js               # PostCSS設定

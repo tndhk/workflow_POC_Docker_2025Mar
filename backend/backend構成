@@ -1,0 +1,26 @@
+workflow-planner-backend/
+├── src/
+│   ├── controllers/
+│   │   ├── authController.js      # ユーザー認証処理
+│   │   ├── projectController.js   # プロジェクト操作
+│   │   ├── taskController.js      # タスク操作
+│   │   ├── presetController.js    # プリセット提供
+│   │   └── holidayController.js   # 休日データ提供
+│   ├── models/
+│   │   ├── User.js                # ユーザーデータモデル
+│   │   ├── Project.js             # プロジェクトデータモデル
+│   │   └── Task.js                # タスクデータモデル
+│   ├── routes/
+│   │   ├── authRoutes.js          # 認証API定義
+│   │   ├── projectRoutes.js       # プロジェクトAPI定義
+│   │   ├── taskRoutes.js          # タスクAPI定義
+│   │   ├── presetRoutes.js        # プリセットAPI定義
+│   │   └── holidayRoutes.js       # 休日API定義
+│   ├── middleware/
+│   │   └── authMiddleware.js      # JWT認証ミドルウェア
+│   ├── data/
+│   │   ├── workflowPresets.js     # ワークフロープリセットデータ
+│   │   └── holidaysData.js        # 休日データ
+│   └── server.js                  # メインサーバーファイル
+├── .env                           # 環境変数設定
+└── package.json                   # 依存パッケージ設定

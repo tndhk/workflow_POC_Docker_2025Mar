@@ -1,0 +1,18 @@
+# Node.js関連
+node_modules/
+npm-debug.log
+
+# Docker関連
+.docker/
+.dockerignore
+
+
+# MongoDB データ
+mongodb_data/
+
+# 環境変数
+.env
+
+# ビルド関連
+dist/
+build/
